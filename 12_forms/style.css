@@ -1,0 +1,70 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 30, 30),
+    rgb(255, 3, 129)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1{
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: white;
+}
+
+form {
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+form > label {
+  margin: 0.4rem 0 0.2rem 0;
+}
+
+form label, form input, form textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+form input, form textarea {
+  padding: 0.4rem 0.6rem;
+  border: solid 1px rgb(179, 179, 179);
+
+}
+
+input[type="submit"] {
+  align-self: flex-end;
+  display: block;
+  margin-top: 1rem;
+  width: auto;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 30, 30),
+    rgb(255, 3, 129)
+  );
+  color: white;
+  border-radius: 0.8rem;
+  border: none;
+}

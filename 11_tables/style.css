@@ -1,0 +1,55 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Table 1 */
+.student-grades {
+  border-collapse: collapse;
+}
+
+.student-grades td, .student-grades th {
+  border: solid 1px black;
+  padding: 0.6rem 0.5rem;
+}
+
+.student-grades tr:nth-child(even) {
+  background: #aaa;
+}
+
+.student-grades .table-headings {
+  background: #444;
+  color: #fff;
+}
+
+/* Table 2 */
+.schedule {
+  border-collapse: collapse;
+}
+
+.schedule td, .schedule th {
+  padding: 0.8rem 0.6rem;
+  border: solid 1px black;
+}
+
+#lunch-cell {
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Table 3 */
+.board {
+  border-collapse: collapse;
+}
+
+.board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px black;
+} 
+
+.board tr:nth-child(odd) td:nth-child(even), .board tr:nth-child(even) td:nth-child(odd) {
+  background: black;
+}
