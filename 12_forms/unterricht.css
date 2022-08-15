@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    hotpink,
+    orangered
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 700;
+}
+
+form {
+  min-width: 500px;
+  padding: 2rem 3rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+label {
+  margin: 0.6rem 0 0.4rem 0;
+}
+
+input[type="submit"], input[type="reset"] {
+  display: block;
+  width: auto;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: linear-gradient(
+    to bottom right,
+    hotpink,
+    orangered
+  );
+  border-radius: 0.6rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white;
+}
+
+input, label, textarea {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+form > div {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
