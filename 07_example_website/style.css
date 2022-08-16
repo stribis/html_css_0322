@@ -1,0 +1,104 @@
+/* Table of Contents */
+/* 
+
+01 Main Navigation
+02 Header
+
+*/
+
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* TODO: Line Height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  /* TODO: Line Height */
+}
+
+/* 01 Main Navigation */
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.817);
+  padding: 2rem 0;
+}
+
+.main-navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-navigation ul a {
+  font-size: 1.2rem;
+  color: rgb(142, 142, 142);
+}
+
+/* 02 Header */
+
+header {
+  padding-top: 3rem;
+  background: linear-gradient(
+    to bottom right,
+    hotpink,
+    orangered
+  );
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container h1 {
+  text-align: center;
+  font-size: 6rem ;
+  color: white;
+  line-height: 0.7;
+}
+
+.header-container p {
+  text-align: center;
+  font-size: 4rem ;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.header-container a {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  background: rgb(255, 12, 93);
+  padding: 1rem 1.4rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: auto;
+}
