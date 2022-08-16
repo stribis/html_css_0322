@@ -1,0 +1,67 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background: purple;
+  /* padding: 2rem; */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+nav > ul > li {
+  padding: 2rem 1rem;
+}
+
+nav > ul > li a  {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.trigger {
+  position: relative;
+}
+
+.dropdown {
+  
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  /* transform-origin: center top; */
+  /* transform: scaleY(0); */
+  height: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: blue;
+  text-align: center;
+  /* transition: 1s; */
+}
+
+.dropdown li {
+  width: 100%;
+  padding: 1rem;
+}
+
+.trigger:hover > .dropdown {
+  height: auto;
+  /* visibility: visible; */
+  /* opacity: 1; */
+  /* transform: scaleY(1); */
+}
