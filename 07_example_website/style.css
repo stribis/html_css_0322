@@ -16,13 +16,11 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  /* TODO: Line Height */
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Catamaran', sans-serif;
   font-weight: 800;
-  /* TODO: Line Height */
 }
 
 h2 {
@@ -41,13 +39,16 @@ h2 {
   justify-content: space-around;
   align-items: center;
   background: rgba(0, 0, 0, 0.817);
-  padding: 2rem 0;
+  padding: 1.8rem 0;
+  z-index: 999;
 }
 
 .main-navigation a {
   color: white;
+  letter-spacing: 2px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .main-navigation ul {
@@ -57,7 +58,7 @@ h2 {
 }
 
 .main-navigation ul a {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: rgb(142, 142, 142);
 }
 
@@ -66,11 +67,11 @@ h2 {
 header {
   padding-top: 3rem;
   background: linear-gradient(
-    to bottom,
-    hotpink,
-    orangered
+    to top,
+    #ff6a00,
+    #ee0979
   );
-  min-height: 75vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +98,7 @@ header {
   text-align: center;
   font-size: 4rem ;
   color: white;
+  font-weight: 800;
   font-family: 'Catamaran', sans-serif;
 }
 
@@ -105,11 +107,11 @@ header {
   text-align: center;
   margin: 0 auto;
   margin-top: 3rem;
-  background: rgb(255, 12, 93);
-  padding: 1rem 1.4rem;
+  background: #ee0979;
+  padding: 1.5rem 1.9rem;
   border-radius: 1.5rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   width: auto;
 }
@@ -118,11 +120,12 @@ header {
 .bubble {
   border-radius: 100%;
   background: linear-gradient(
-    to top,
-    hotpink,
-    orangered
+    to bottom,
+    #ee0979,
+    #ff6a00
   );
-  position: absolute;
+  position: absolute; 
+  z-index: -1;
 }
 
 .bubble.left {
@@ -137,11 +140,24 @@ header {
   width: 500px;
   height: 500px;
   top: -100px;
-  left: 50%;
-  z-index: -1;
-  /* transform: translate(-50%, 0%); */
+  left: 30%;
+  z-index: -1;  /* transform: translate(-50%, 0%); */
 }
 
+
+.bubble.right {
+  width: 900px;
+  height: 900px;
+  top: -450px;
+  right: -450px;
+}
+
+.bubble.br {
+  width: 900px;
+  height: 900px;
+  top: -450px;
+  right: -450px;
+}
 /* 03 - Info Sections */
 
 .info {
@@ -158,11 +174,14 @@ header {
 
 .info > .img-container {
   width: 30%;
+  
 }
 
 .info > .img-container img{
   width: 100%;
   border-radius: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .info p {
