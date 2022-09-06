@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <style>
+    /* Small Reset */
+    *::before, *::after, * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .clock {
+      width: 500px;
+      height: 500px;
+      border: solid 2px black;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.603);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bar {
+      width: 10px;
+      height: 250px;
+      background: black;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: center bottom;
+      animation: secondsHand 60s;
+    }
+
+
+    @keyframes secondsHand {
+      from {transform: translateX(-50%) rotate(0);}
+      to {transform: translateX(-50%) rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="circle">
+      <div class="bar"></div>
+    </div>
+  </div>
+</body>
+</html>

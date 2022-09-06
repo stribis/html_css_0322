@@ -1,0 +1,57 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, rgb(255, 0, 251), rgb(255, 0, 0));
+  font-size: 3rem;
+  color: white;
+  font-family: monospace;
+}
+
+div {
+  border: solid 1px white;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  transition: 2s;
+}
+
+.a:hover {
+  transform: translateX(300px);
+  background-color: green;
+}
+
+.b {
+  animation-name: move;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.c {
+  position: relative;
+  animation: move 5s;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    background: red;
+  }
+  50% {
+    left: 200px;
+    background: blue;
+  }
+  100% {
+    left: 0;
+    background: red;
+  }
+}

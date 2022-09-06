@@ -77,7 +77,7 @@ header {
   align-items: center;
   position: relative;
   overflow: hidden;
-  z-index: -2;
+  /* z-index: -2; */
 }
 
 .header-container {
@@ -114,6 +114,13 @@ header {
   font-size: 0.9rem;
   text-transform: uppercase;
   width: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.header-container a:hover {
+  background: #b00257;
+  transition: 1s;
 }
 
 

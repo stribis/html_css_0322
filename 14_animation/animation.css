@@ -1,0 +1,42 @@
+
+p {
+  font-size: 2rem;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: red;
+}
+
+.color-change {
+  animation-name: colorChange;
+  animation-duration: 2s;
+}
+.move {
+  position: relative;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.rotate{
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+@keyframes colorChange {
+  from { background: red;}
+  to {background: blue;}
+}
+
+@keyframes move {
+  0% {left: 0;}
+  50% {left: 300px}
+  100% {left: 0;}
+}
+
+@keyframes rotate {
+  to {transform: rotate(360deg);}
+}

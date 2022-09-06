@@ -1,0 +1,31 @@
+
+p {
+  font-size: 2rem;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: red;
+  
+  
+}
+
+.color-change:hover {
+  background: blue;
+  transition: 3s;
+}
+
+.move:hover {
+  transform: translateX(300px);
+  background: blue;
+  transition: 3s;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+  transition: 3s;   
+  transition-timing-function: linear;
+}
